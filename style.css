@@ -490,7 +490,12 @@ nav .container {
     left: 0;
     width: 30px;
     height: 30px;
-    background: red;
+    margin-left: 16px;
+  }
+  .mobile-nav-icon div {
+    border: 2px solid #FFFFFF;
+    margin: 6px 0px;
+
   }
   .header .header-menu {
     display: flex;
@@ -506,7 +511,7 @@ nav .container {
   .header .show_nav_mob {
     display: flex;
     position: absolute;
-    background: red;
+    background: black;
     flex-direction: column;
     z-index: 9;
     top: 0;
@@ -524,8 +529,8 @@ nav .container {
   .close {
     position: absolute;
     display: block;
-    right: 0;
-    top: 0;
+    right: 16px;
+    top: 16px;
   }
 
   .banner {
