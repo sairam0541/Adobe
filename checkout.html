@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="checkout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav>
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <a href="./index.html">
+                <img
+                  src="images/logo.png"
+                  alt="logo of VENIA"
+                  title="logo of VENIA"
+                  tabindex="1"
+                />
+              </a>
+            </div>
+
+            <div class="header-menu" id="header-menu">
+              <a href="javascript:void(0)" class="menu active">Home</a>
+              <a href="javascript:void(0)" class="menu">Women</a>
+              <a href="javascript:void(0)" class="menu">Men</a>
+              <a href="javascript:void(0)" class="menu">Smart Gear</a>
+              <a href="javascript:void(0)" class="menu">Accessories</a>
+            </div>
+
+            <div class="header-icon">
+              <img src="images/header-icon.png" alt="icon" title="icon" />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+      <!-- mid page content -->
+     <div class="container">
+      <h2 class="title">Checkout</h2>
+      <div class="checkout-container ">
+        <div class="contract-personal-container">
+          <h3>Guest Checkout</h3>
+          <P>Contact information</P>
+        <label for="">We’ll use these details to keep you informed on your delivery.</label>
+        <div class="Contact-info">        
+          <form>
+            <label for="email">Email</label><br>
+    <input type="text" id="email" name="email">
+          </form>
+          <form>
+            <label for="phonenumber">Phonenumber</label><br>
+    <input type="text" id="phonenumber" name="phonenumber">
+          </form>
+         </div>
+         <div class="shippin-info">
+          <h4>1. Shipping Information</h4>
+          <div class="select-country">
+            <label for="select">Select Country</label><br>
+              <select >
+                <option value="price">India</option>
+                <option value="name">United States</option>
+              </select>
+          </div>
+          <div class="Contact-name-info">        
+            <form>
+              <label for="FirstName">First Name</label><br>
+      <input type="text" id="FirstName" name="FirstName">
+            </form>
+            <form>
+              <label for="LastName">Last Name</label><br>
+      <input type="text" id="Last Name" name="Last Name">
+            </form>
+           </div>
+           <div class="Contact-street-info">        
+            <form>
+              <label for="StreetAddress">Street Address</label><br>
+      <input type="text" id="StreetAddress" name="StreetAddress">
+            </form>
+            <form>
+              <label for="StreetAddress2">Street Address2</label><br>
+      <input type="text" id="StreetAddress2" name="StreetAddress2">
+            </form>
+           </div>
+           <div class="Contact-city-info">        
+            <form>
+              <label for="city">City</label><br>
+      <input type="text" id="city" name="city">
+            </form>
+            <form>
+              <label for="StreetAddress2">Street Address2</label><br>
+      <input type="text" id="StreetAddress2" name="StreetAddress2">
+            </form>
+            <form>
+              <label for="zipcode">zip-code</label><br>
+      <input type="text" id="zipcode" name="zipcode">
+            </form>
+           </div>
+           
+           <p class="ctn-shping-btn"><a href="shipping.html"><button class="">CONTINUE TO SHIPPING METHOD</button></a></p>
+         </div>
+         <div class="shipping-methd">
+          2. Shipping Method
+         </div>
+         <div class="payment-info">
+          3. Payment Information
+         </div>
+        </div>
+      
+       
+        <div class="pricing-summary">
+         <div class="sign-block">
+          <p class="sign-in-text">Sign in for Express Checkout</p>
+          <p class="sign-in-btn"><a href=""><button class="">Sign In</button></a></p>
+         </div>
+         <div class="pricing-summary-details">
+          <h3>Pricing Summary</h3>
+          <div>
+            <span>Subtotal</span>
+          <span>$ 388.00</span>
+        </div>
+        <div><span>Coupon</span><span>- $ 77.60</span></div>
+        <div><span>Gift Card</span><span>- $ 77.60</span></div>
+        <div><span>Estimated tax</span><span>- $ 23.28</span></div>
+        <div><span>Estimated shipping</span><span>FREE</span></div>
+        <div class="final-total"><span>Estimated Total</span><span>$ 233.68</span></div>
+
+
+         </div>
+        </div>
+      </div>
+      
+     </div>
+        <!--===========Footer Section=============-->
+    <footer class="footer">
+      <div class="footer__top">
+          <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Print</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Technology</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Hardware Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Software Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Digital Signage</a>
+                  </li>
+                  
+                  
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <h2 class="nav__title">Follow us</h2>
+                <p class="nav_title_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, repudiandae accusantium? Sint atque totam a delectus</p>
+                <p><i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i></p>
+              </li>
+            </ul>
+      </div>
+      
+      
+      <div class="legal">
+        <p><img src="images/venia-logo.jpg"></p>
+        <p>&copy; 2019 Something. All rights reserved.</p>
+        <div class="legal__links">
+          <a href="http://">Terms of use</a>
+          <a href="http://">Privecy policy</a>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
+  <script src="custom.js"></script>
+</html>

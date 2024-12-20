@@ -1,0 +1,248 @@
+#product-detail-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+/* ****************** GALLERY ****************** */
+#gallery {
+  display: grid;
+  grid-template-columns: 100px calc(100% - 100px);
+  position: relative;
+}
+
+#gallery #thumb-list img {
+  max-width: 80px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+#gallery #thumb-list img.active {
+  border-bottom: 4px #1363df solid;
+}
+
+#gallery #active-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery #active-image img {
+  width: 350px;
+  height: 350px;
+}
+
+#gallery #dots {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  display: none;
+}
+
+#gallery #dots div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 0;
+  opacity: 0.5;
+}
+
+#gallery #dots div.active {
+  opacity: 1;
+}
+
+/* ******************  ****************** */
+#product-content .text-cat {
+  font-size: 14px;
+  color: #172026;
+  font-weight: normal;
+}
+#product-content .text-cat span {
+  color: #767b7f;
+}
+
+#product-content #title {
+  color: #172026;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 20px 0 13px 0;
+}
+#product-content #price {
+  color: #172026;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+#product-content #descShort {
+  margin: 16px 0;
+  color: #172026;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#product-content #quantity-wrapper {
+  border-top: 2px solid #d1d3d6;
+}
+
+#product-content #quantity-wrapper h3 {
+  margin: 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#quantity-wrapper .quantity-increment {
+  display: flex;
+  align-items: center;
+}
+
+#quantity-wrapper .quantity-increment input {
+  border: 1px solid #868686;
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+  max-width: 100px;
+  text-align: center;
+}
+
+#quantity-wrapper .quantity-increment span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#quantity-wrapper .btn-add-cart {
+  background-color: #1363df;
+  color: #fff;
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 7px;
+  text-transform: uppercase;
+  margin: 40px 0 24px 0px;
+  min-width: 200px;
+}
+
+#product-content .icons {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  justify-content: center;
+  gap: 32px;
+}
+
+#product-content .icons div {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#product-content .icons img {
+  display: inline-block;
+  max-height: 20px;
+  margin-right: 5px;
+}
+
+#product-description {
+  margin-top: 1em;
+}
+#product-description #description {
+  color: #172026;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 45px;
+}
+
+#product-description h2 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  color: #172026;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 10px 0 24px 0;
+}
+
+#product-description h3 {
+  margin-bottom: 16px;
+  color: #172026;
+  font-size: 20px;
+  font-weight: normal;
+}
+/* increment/decrement */
+.item-actions {
+}
+.decrease,
+.increase {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #b5b8ba;
+  background: #eaebeb;
+  cursor: pointer;
+}
+.quantity {
+  border: 2px solid #91959c;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin: 0px 12px;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+}
+.star {
+  color: #172026;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+/* ****************** RESPONSIVE ****************** */
+
+@media screen and (max-width: 767px) {
+  #product-detail-content {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  #gallery {
+    grid-template-columns: 100%;
+  }
+
+  #thumb-list {
+    display: none;
+  }
+
+  #gallery #dots {
+    display: flex;
+  }
+
+  #product-content #quantity-wrapper {
+    text-align: center;
+  }
+  #quantity-wrapper .quantity-increment {
+    justify-content: center;
+  }
+  #product-content .icons {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #product-detail-content {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+/* ******************  ****************** */

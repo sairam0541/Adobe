@@ -1,0 +1,42 @@
+
+.payment-summary{
+  padding: 24px;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  margin-top: 16px;
+}
+.payment-summary p{
+font-size: 16px;
+font-weight: 600;
+color: #172026;
+margin-bottom: 16px;
+}
+.payment-summary div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shiping-info-sub p, .shiping-info-full p {
+  color: #535965;
+font-size: 16px;
+font-weight: normal;
+}
+.review-cart{
+  display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.cart-left, .cart-right{
+  display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.cart-left img, .cart-right img{
+  width: 100px;
+  height: 100px;
+}
+.cart-left div, .cart-right div{
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}

@@ -1,0 +1,168 @@
+ h2.title{
+font-size: 48px;
+font-weight: 600;
+color: #172026;
+text-align: center;
+padding: 40px 0px;
+}
+.checkout-container{
+  display: grid  ;
+      grid-template-columns: 65% 35%;
+      padding: 0rem 1rem;
+      gap: 2rem;
+}
+.contract-personal-container h3{
+  font-size: 36px;
+  font-weight: 600;
+  color: #172026;
+  margin: 0px 0 20px 0;
+}
+.contract-personal-container p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #172026;
+  margin-bottom: 8px;
+}
+.contract-personal-container  label{
+font-size: 16px;
+font-weight: normal;
+}
+.Contact-info, .Contact-name-info, .Contact-street-info, .Contact-city-info{
+  display: flex;
+gap: 16px;
+margin-top: 16px;
+}
+input, select{
+  border-radius: 8px;
+    border: 2px solid #B5B7BC;
+    background-color: #FFFFFF;
+    height: 44px;
+    min-width: 340px;
+    margin-top: 8px;
+    color: #91959C;
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+
+  }
+  .shippin-info h4 {
+    font-size: 20px;
+    color: #172026;
+margin: 40px 0 24px 0;
+  }
+  .Contact-info label, .select-country label, .Contact-name-info label, .Contact-street-info label, .Contact-city-info label {
+    color: #181C24;
+font-size: 16px;
+font-weight: 600;
+  }
+  .Contact-city-info #StreetAddress2, .Contact-city-info #zipcode{
+    width: 165px;
+    min-width: 100px;
+  }
+  .ctn-shping-btn{
+  text-align: center;
+  
+
+  }
+  .ctn-shping-btn button{
+    border: 2px solid #2A65D7;
+    height: 44px;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 40px 0px;
+    color: #1363DF;
+    background-color: #fff;
+    cursor: pointer;
+
+
+  }
+  .sign-block{
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    display: flex;
+    padding: 24px 32px;
+    margin-bottom: 24px;
+  }
+  .sign-in-text{
+  
+    font-size: 20px;
+  }
+  .sign-in-btn button{
+    border: 2px solid #2A65D7;
+    height: 44px;
+    border-radius: 8px;
+    padding: 12px;
+    white-space: nowrap;
+    min-width: 100px;
+    color: #1363DF;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .pricing-summary-details h3{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .pricing-summary-details{
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    padding: 24px 32px;
+  }
+  .pricing-summary-details div{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 16px;
+   font-size: 16px;
+  }
+  .final-total{
+  font-weight: bold;
+  }
+ .shipping-methd {
+    border-bottom: 1px solid #D1D3D6;
+    border-top: 1px solid #D1D3D6;
+    font-size: 20px;
+    color: #72777F;
+    padding: 24px 0px ;
+      
+  }
+  .payment-info{
+    border-bottom: 1px solid #D1D3D6;
+    font-size: 20px;
+    color: #72777F;
+    padding: 24px 0px ;
+    margin-bottom: 90px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .checkout-container{
+      display: grid  ;
+      grid-template-columns: 100%;
+    }
+    .Contact-info, .Contact-name-info, .Contact-street-info, .Contact-city-info{
+      flex-direction: column;
+    }
+    .sign-block{
+    flex-direction: column;
+    }
+    .Contact-city-info #StreetAddress2, .Contact-city-info #zipcode{
+      min-width: 340px;
+      width: auto;
+    }
+
+  }
+  @media screen and (max-width: 1024px) {
+    .checkout-container{
+      display: grid  ;
+          grid-template-columns: 100%;
+    }
+    .Contact-info, .Contact-name-info, .Contact-street-info, .Contact-city-info{
+      flex-direction: column;
+    }
+    .sign-block{
+    flex-direction: column;
+    }
+    .Contact-city-info #StreetAddress2, .Contact-city-info #zipcode{
+      min-width: 340px;
+      width: auto;
+    }
+    
+  }
